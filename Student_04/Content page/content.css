@@ -1,0 +1,90 @@
+.content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    position: relative;
+    color: black;
+
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c4e7bc;
+    margin: 0;
+    padding: 0;
+  }
+
+.cimg{
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+    margin:auto;
+    width: 800px;
+}
+
+.top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #4f400f;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    background-color:url('../background.jpg');
+    background-size: cover;
+    background-position: left; 
+    background-repeat: no-repeat;
+    
+}
+.top-button :hover{
+    background-color: #87c60b;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+h1{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+.description1{
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 30px;
+}
+
+.cdescription{
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 30px;
+    text-align: left;
+
+}
+
+.c_header{
+    padding-top: 20px;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 30px;
+    text-align:center;
+
+    background-image: url('../background.jpg'); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the whole page */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    
+}
+
+
+
+
+

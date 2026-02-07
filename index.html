@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Project Hub</title>
+    <style>
+        /* 1. RESET & BASIC SETUP */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            /* Animated Gradient Background */
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        /* 2. ANIMATIONS */
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+
+        p.subtitle {
+            margin-bottom: 50px;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* 3. CARD GRID LAYOUT */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Auto-layout */
+            gap: 25px;
+            width: 90%;
+            max-width: 1200px;
+            padding: 20px;
+        }
+
+        /* 4. INTERACTIVE CARDS */
+        .card {
+            background: rgba(255, 255, 255, 0.15); /* Frosted Glass Effect */
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Bouncy transition */
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .card:hover {
+            transform: translateY(-10px) scale(1.02); /* Lift up effect */
+            background: rgba(255, 255, 255, 0.25);
+            box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+            border-color: rgba(255, 255, 255, 0.8);
+        }
+
+        .avatar {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .btn-text {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 20px;
+            background: white;
+            color: #e73c7e;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+
+        .card:hover .btn-text {
+            background: #23d5ab;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>🚀 WEB DEVELOPMENT</h1>
+   
+    <a href="./student02/home/HOME.html" class="card">
+        <span class="avatar">🎨</span>
+        <h2>HOME</h2>
+        <p>click here to navigate to home page</p>
+        <span class="btn-text">View Project &rarr;</span>
+    </a>
+
+    </div>
+
+</body>
+</html>

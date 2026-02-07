@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <head>
+
+        <title>User Profile - Eco-Pulse</title>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Userprofile.css">
+        <script src="Userprofile.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <link rel="stylesheet" href="../GlobleCssFile.css/footer.css">
+        <link rel="stylesheet" href="../GlobleCssFile.css/nav.css">
+        <link rel="stylesheet" href="../GlobleCssFile.css/body.css">
+        <script src="Userprofile.js"></script>
+      </head>
+      <body>
+
+      <div class="wrapper">
+          <nav class="navbar">
+              <div>
+                  <img class="pic" src="../logo.png" alt="logo">
+              </div>
+              <ul class="nav-links">
+                  <li><a href="../../student02/home/HOME.html">Home</a></li>
+                  <li><a href="../../student02/table/TABLE.html">Table</a></li>
+                  <li><a href="../sitemap/sitemap.html">Sitemap</a></li>
+                  <li><a href="../../Student1/Volunteer page/volunteerPage.html">Volunteer</a></li>
+                  <li><a href="../../Std3_ Shabeena_20241014/team/Teams1.html">Team</a></li>
+                  <li><a href="../../Std3_ Shabeena_20241014/feedback/feedback.html">Feedback</a></li>
+              </ul>
+          </nav>
+
+        <section class="profile">
+          <div class="profile-card">
+            <h1>User Profile</h1>
+            <img src="../User profile/prof img.png" alt="User Avatar" class="avatar" width="200" height="200">
+            <h2 id="user-name">Rasakumaran Keerjanapirian</h2>
+            <p id="user-work">Work: Student</p>
+            <p id="user-age">Age: 21</p>
+            <p id="user-experience">Experience: Web Development, AI Research</p>
+            <h3>About Me</h3>
+            <textarea placeholder="About me Eg:Passionate about technology and innovation, I am a student with a strong interest in Web Development and AI Research. I thrive on solving complex problems and continuously expanding my knowledge in cutting-edge fields."></textarea>
+          </div>
+        </section>
+    
+        <section class="user-input">
+        <h3>Update Your Profile</h3>
+        <form id="update-form" onsubmit="updateUserInfo(event)">
+            <input type="text" id="input-name" placeholder="Full Name" required >
+            <input type="number" id="input-age" placeholder="Age" required >
+            <input type="text" id="input-work" placeholder="Work" required >
+            <input type="text" id="input-experience" placeholder="Experience" required >
+            <button type="submit">Update Profile</button>
+        <h3>Update Skills</h3>
+            
+           <label>Communication (%)</label>
+           <input type="number" id="input-ai" placeholder="Comm" min="0" max="100" required >
+            
+           <label>Team Working (%)</label>
+           <input type="number" id="input-software" placeholder="team" min="0" max="100" required >
+            
+           <label>IT Skills (%)</label>
+           <input type="number" id="input-data" placeholder="IT" min="0" max="100" required >
+    
+           <button type="submit">Update Profile</button>
+        </form>
+        </section>
+    
+
+    <section class="info">
+      <div class="container">
+        <h3>Skills</h3>
+        <div class="skill-bar">
+          <span>Communication</span>
+          <div class="progress" id="progress-ai" style="width: 80%"></div>
+        </div>
+        <div class="skill-bar">
+          <span>Team Working</span>
+          <div class="progress" id="progress-software" style="width: 75%"></div>
+        </div>
+        <div class="skill-bar">
+          <span>IT Skills</span>
+          <div class="progress" id="progress-data" style="width: 70%"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="volunteering">
+      <h3>Volunteering Availability (This month)</h3>
+    <figure>
+      <figcaption>(This table displays the availability for volunteering this month.)</figcaption>
+      <table class="calendar">
+        <tr>
+          <th>Sun</th>
+          <th>Mon</th>
+          <th>Tue</th>
+          <th>Wed</th>
+          <th>Thu</th>
+          <th>Fri</th>
+          <th>Sat</th>
+        </tr>
+        <tr>
+          <td></td>
+          <td>1</td>
+          <td>2</td>
+          <td class="available">✅</td>
+          <td class="available">✅</td>
+          <td>5</td>
+          <td class="available">✅</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td class="available">✅</td>
+          <td>9</td>
+          <td class="available">✅</td>
+          <td>11</td>
+          <td class="available">✅</td>
+          <td>13</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>15</td>
+          <td class="available">✅</td>
+          <td>17</td>
+          <td>18</td>
+          <td>19</td>
+          <td class="available">✅</td>
+        </tr>
+        <tr>
+          <td class="available">✅</td>
+          <td>22</td>
+          <td class="available">✅</td>
+          <td class="available">✅</td>
+          <td class="available">✅</td>
+          <td>26</td>
+          <td>27</td>
+        </tr>
+        <tr>
+          <td>28</td>
+          <td class="available">✅</td>
+          <td>30</td>
+          <td class="available">✅</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </figure>  
+    </section>
+    
+
+    <div class="container">
+      <h3>Select UN Goals You Support</h3>
+      <div id="goal-container" class="goal-container"></div>
+  
+      <div id="selected-goals" class="selected-goals"></div>
+  </div>
+  
+  <script>
+      const sdgGoals = Array.from({ length: 17 }, (_, i) => ({
+          id: i + 1,
+          img:'../User profile/images/goal{i + 1}.png',
+      }));
+  
+      const selectedGoals = new Set();
+  
+      const goalContainer = document.getElementById('goal-container');
+      const selectedGoalsContainer = document.getElementById('selected-goals');
+  
+      function toggleGoal(goalId) {
+          if (selectedGoals.has(goalId)) {
+              selectedGoals.delete(goalId);
+          } else {
+              selectedGoals.add(goalId);
+          }
+          renderSelectedGoals();
+          renderGoals();
+      }
+  
+      function renderGoals() {
+          goalContainer.innerHTML = '';
+          sdgGoals.forEach(goal => {
+              const img = document.createElement('img');
+              img.src = goal.img;
+              img.alt = `Goal ${goal.id}`;
+              img.className = `goal ${selectedGoals.has(goal.id) ? 'selected' : ''}`;
+              img.onclick = () => toggleGoal(goal.id);
+              goalContainer.appendChild(img);
+          });
+      }
+  
+      function renderSelectedGoals() {
+          selectedGoalsContainer.innerHTML = '<h3>Selected Goals</h3>';
+          if (selectedGoals.size > 0) {
+              selectedGoals.forEach(goalId => {
+                  const goal = sdgGoals.find(g => g.id === goalId);
+                  const img = document.createElement('img');
+                  img.src = goal.img;
+                  img.alt = `Goal ${goal.id}`;
+                  img.className = 'goal selected';
+                  selectedGoalsContainer.appendChild(img);
+              });
+          }
+      }
+  
+      
+      renderGoals();
+  </script>
+  
+
+
+    <section class="contact">
+      <h3>Contact Me</h3>
+      <form>
+        <input type="text" placeholder="Full Name" required >
+        <input type="email" placeholder="Email" required >
+        <textarea placeholder="Message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <p class="top"><a href="#top">Go top</a></p>
+
+    <footer>
+      <div class="footer-content">
+          <img src="../logo.png" alt="Logo" style="height: 150px;">
+          <ul class="socialmedia">
+            <li><a href="https://www.instagram.com"><i class='bx bxl-instagram'></i></a></li>
+            <li><a href="https://www.facebook.com"><i class='bx bxl-facebook-circle'></i></a></li>
+            <li><a href="#"><i class='bx bxl-whatsapp'></i></a></li>
+            <li><a href="https://www.linkedin.com"><i class='bx bxl-linkedin-square'></i></a></li>
+          </ul>
+      </div>
+      <div class="footer-bottom">
+          <p>Copyright &copy; 2025 ECO-PULSE. Designed by <a href = "../page%20editor/pageEditor_ST04.html">Keerjanapirian</a>
+      </div>
+  </footer>
+</div>
+</body>
+</html>

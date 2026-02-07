@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Page Editor</title>
+        <link rel="stylesheet" href="pageeditor.css">
+        <link rel="stylesheet" href="../GlobleCssFile.css/nav.css">
+        <link rel="stylesheet" href="../GlobleCssFile.css/footer.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"> <!--Loads Boxicons CSS-->
+    </head>
+    <body>
+        <div class="wrapper">
+            <nav class="navbar">
+                
+                <div>
+                    <img class="pic" src="../logo.png" alt="logo" > 
+                </div>
+    
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="../table/TABLE.html">Table</a></li>
+                    <li><a href="#">sitemap</a></li>
+                    <li><a href="#">Volunteer</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="../../Shabeena/feedback.html">Feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="container">
+            <div class="content">
+                <h1>Page Editor</h1>
+                <h2>Shabeena</h2>
+                <h3>Student Role: 3</h3>
+                <p></p>
+                <hr>
+                <div class="content">
+
+                    <section>
+                        <h2>Feedback Form Description</h2>
+                        <p>In this page, looking at the provided HTML document, it's a feedback form webpage with various form elements and sections. The document uses standard HTML tags to structure the content and create interactive form elements.</p>
+                        <p>The page starts with a DOCTYPE declaration and basic HTML structure including head and body tags. The main content is housed in a div with class "fcontent" containing a form with various input fields. The form includes text inputs for name and email, a number input for age, a dropdown menu for visit frequency, and several sets of radio buttons for rating different aspects of the website such as content quality, relevance, design, navigation ease, and feedback mechanism. There's also a textarea for improvement suggestions and buttons to reset or submit the form.</p>
+                        <p>Following the form is a preview section that displays the user's feedback before final submission, with span elements that would be populated with the form data via JavaScript. This section has edit and confirm buttons.</p>
+                        <p>A popup div is included that appears after submission, thanking the user for their feedback. The page ends with a footer containing social media links with images and a navigation menu with links to other pages of the website.</p>
+                        <p>The form uses various input types (text, number, radio, select) with associated labels to create a comprehensive feedback collection tool. The structure suggests that JavaScript (referenced at the bottom) would handle form validation, preview functionality, and submission processes.</p>
+                    </section>
+            
+                    <section>
+                        <h2>CSS Techniques</h2>
+                        <p>The CSS file provided is a comprehensive styling document for the feedback form webpage. It establishes the visual appearance and layout of all elements on the page. The stylesheet begins with basic settings for the body element, applying a light gray background color, Arial font, and removing default margins and padding. Headings are centered and given specific colors, while form labels are displayed as blocks with proper spacing and a medium gray color.</p>
+                        <p>The stylesheet carefully defines the appearance of different input types, giving text inputs, number inputs, select dropdowns, and textareas a full width, consistent padding, rounded corners, and proper spacing.</p>
+                        <p>Radio buttons are given special treatment through the "radio-group" class, which uses flexbox to arrange options horizontally with appropriate spacing. All buttons (submit, reset, and general) feature a green background that darkens when hovered over, creating a pleasing interactive effect.</p>
+                        <p>The main form container has a background image and is centered on the page with a maximum width, ample margin, padding, and a subtle shadow effect for depth. The preview section and popup are initially hidden (display: none) but are styled to appear as distinct panels with their own backgrounds, borders, and shadows when activated. The footer is styled with a dark background and contains two distinct sections: social media links with circular images that slightly enlarge when hovered over, and a horizontal navigation menu with subdued links that brighten on hover.</p>
+                        <p>Throughout the stylesheet, there's consistent use of subtle visual effects like shadows, rounded corners, and hover transitions to create a polished, professional appearance while maintaining a clean, readable interface for the feedback form.</p>
+                    </section>
+            
+                    <section>
+                        <h2>Accessibility</h2>
+                        <p>The feedback form has several accessibility concerns that need addressing. While the HTML structure provides a basic framework with form controls and labels, it lacks critical accessibility features. The form is missing proper ARIA attributes and lacks explicit label-for connections in some places. There's no clear indication of required fields, and the error handling approach isn't specified. Form controls lack appropriate tab indexing guidance, which could create navigation challenges for keyboard users.</p>
+                        <p>The CSS styling presents additional accessibility issues. The color contrast between text and backgrounds may be insufficient in some areas, particularly for users with visual impairments. The radio button groups, while visually arranged horizontally, may cause navigation confusion for screen reader users without proper grouping techniques. The form's background image might interfere with text readability, especially if there's insufficient contrast between the text and image. The hover-only feedback on buttons doesn't accommodate non-mouse users, and there's no visible focus indicator styling to help keyboard navigators understand their current position.</p>
+                        <p>Additionally, the form lacks responsive design considerations for various screen sizes and doesn't provide clear instructions for screen reader users about how the preview and confirmation process works. The social media links in the footer with image-only content lack proper alternative text for screen readers. Overall, while the form has a functional structure, it requires significant accessibility improvements to be usable for people with disabilities, including better semantic HTML, ARIA roles, keyboard navigation support, sufficient color contrast, and clear visual and textual indicators for interactive elements.</p>
+                    </section>
+            
+                    <section>
+                        <h2>Teams</h2>
+                        <h3>HTML Techniques</h3>
+                        <p>Your HTML file incorporates various techniques to structure and style a "Team" webpage effectively. It follows the standard HTML5 structure with a `<!DOCTYPE html>` declaration and includes a &lt;head&gt; section for metadata, CSS links, and an external icon library (Boxicons).</p>
+                        <p>The navigation bar (`&lt;nav&gt;`) provides links for seamless website navigation, and images (`&lt;img&gt;`) are used for branding and team member profiles.</p>
+                        <p>The team section employs a container-based layout, ensuring proper organization of content. Each team member is represented using a `div` with a nested structure for images and details.</p>
+                        <p>The page utilizes external CSS files for styling consistency, and the &lt;footer&gt; section contains social media links and copyright information. These techniques contribute to an accessible, well-structured, and visually appealing team page.</p>
+                    
+                        <h3>CSS Techniques</h3>
+                        <p>The CSS file for the team page incorporates several styling techniques to enhance the visual appeal and responsiveness of the layout.</p>
+                        <p>The `body` is styled with a clean font and a soft green background color to create a welcoming feel. The `.team-page-container` uses a background image with `cover` sizing and `no-repeat` properties to ensure a well-fitted background.</p>
+                        <p>The `.team-member-container` applies `flexbox` to align team members efficiently while allowing wrapping for responsiveness. Each `.team-member` is designed with a defined width, padding, and border radius, alongside a `box-shadow` for a subtle elevation effect.</p>
+                        <p>A hover effect is applied to `.team-member`, using `transform: translateY(-10px);` and `box-shadow` changes to give an interactive feel. The images within `.team-member` are circular using `border-radius: 50%` and include a smooth scaling effect on hover. The footer maintains a structured layout with `flexbox` alignment for social media icons, and interactive hover effects are applied to links and icons. These techniques ensure a modern, engaging, and well-structured team page.</p>
+                    
+                        <h3>Accessibility</h3>
+                        <p>The accessibility of the Team HTML and CSS is improved through several techniques that enhance usability and inclusivity. In the HTML structure, semantic elements such as &lt;nav&gt;, &lt;footer&gt;, and &lt;div&gt; with descriptive class names improve screen reader compatibility and provide a clear document structure.</p>
+                        <p>The use of `alt` attributes in images ensures visually impaired users can understand their content.</p>
+                        <p>The navigation menu is structured using an unordered list (`&lt;ul&gt;`) for better readability by assistive technologies. In the CSS, text contrast is maintained with a clear font color on backgrounds for readability, while hover effects provide visual feedback without relying solely on color changes.</p>
+                        <p>The `flexbox` layout ensures responsiveness, making the page accessible across different screen sizes. Additionally, the use of `rem` and `em` units for text scaling allows users to adjust font sizes based on their preferences.</p>
+                        <p>Hover and transition effects are smooth to prevent sudden changes that may disorient users. These combined techniques contribute to an accessible and user-friendly interface for a diverse audience.</p>
+                    </section>                    
+            
+                    <section>
+                        <h2>Content Page</h2>
+<h3>HTML Techniques</h3>
+<p>The HTML techniques used in the content page focus on creating a well-structured, responsive, and visually engaging web page.</p>
+<p>The document follows HTML5 standards with a (`&lt;!DOCTYPE html &gt;`) declaration, ensuring compatibility across browsers. The &lt;head&gt; section includes metadata, external CSS links, and Boxicons for enhanced visual elements.</p>
+<p>A structured navigation bar (`&lt;nav&gt;`) with an unordered list (`&lt;ul&gt;`) ensures easy site navigation.</p>
+<p>The main content is organized within &lt;div&gt; containers, with headings (`&lt;h1&gt;` and `&lt;h4&gt;`) and paragraphs (`&lt;p&gt;`) to maintain readability. Anchor links (`&lt;a href="#id"&gt;`) allow quick navigation to different sections of the page.</p>
+<p>The use of images with descriptive `alt` attributes enhances accessibility. A footer section (`&lt;footer&gt;`) provides additional branding, social media links, and copyright information. Horizontal rules (`&lt;hr&gt;`) visually separate sections, improving readability. These techniques ensure a user-friendly, structured, and accessible webpage.</p>
+
+<h3>CSS Techniques</h3>
+<p>This CSS code employs several techniques to create a visually appealing, responsive layout for a website. It starts with setting basic styles for the body, including margin and padding resets, a light green background color, and centered text for a clean design.</p>
+<p>The `.my-content` class ensures the main content box is centered, with padding, a white background, rounded corners, and a subtle box-shadow to create a card-like effect. The `h1` inside the `.my-content` is styled with a dark green color, increased font size, and a margin for spacing.</p>
+<p>Images are handled through the `.content-img` class, where width is controlled to 60%, with a max height of 300px and border radius for smooth corners, all within a responsive design. Flexbox is used in `.con` and `.other` classes to center content and manage layout, while `flex-wrap` ensures the items adapt across different screen sizes.</p>
+<p>Links are styled with a green color, bold weight, and a smooth hover effect that changes the color to a darker green and underlines the text. Media queries ensure that the layout adjusts for smaller screens, such as changing the width of `.my-content` and `.content-img` to fit more compact layouts, and reordering flex items to stack vertically for better mobile usability. The footer, with a dark green background, also adapts flexbox to center its content and includes light green hover effects on developer links.</p>
+<p>The overall design is user-friendly, clean, and responsive, using modern CSS techniques like flexbox, media queries, transitions, and box shadows to enhance both aesthetics and functionality.</p>
+
+<h3>Accessibility</h3>
+<p>The HTML and CSS provided focus on ensuring accessibility and a good user experience. The HTML structure includes semantic elements such as &lt;header&gt;, &lt;footer&gt;, and &lt;nav&gt;, which help define the layout and purpose of each section of the page.</p>
+<p>The use of &lt;h1&gt;, &lt;h4&gt;, and &lt;p&gt; tags makes it easier for screen readers to understand the content hierarchy.</p>
+<p>The links in the navigation (`&lt;nav&gt;`) and the content sections are clear and descriptive, providing proper context for users who rely on assistive technologies.</p>
+<p>Additionally, the &lt;img&gt; tags include the `alt` attribute for images, ensuring that visually impaired users have a description of the image content.</p>
+<p>The CSS incorporates responsive design through media queries, ensuring that the layout adjusts appropriately for different screen sizes, particularly for mobile devices. Flexbox is utilized for layout control, helping to center elements and adapt content as needed, ensuring a smooth experience across all devices.</p>
+<p>The use of color contrast, such as green text on a light background, enhances readability, while the hover effects on links make the website more interactive and accessible. The CSS also considers user interactions like image opacity changes, contributing to visual feedback.</p>
+<p>Together, the HTML structure and CSS styling help provide a user-friendly, accessible website by focusing on clear navigation, readable content, and responsive design that adapts to different devices and screen sizes. This ensures that the site is usable by individuals with various needs and across a wide range of devices.</p>
+  </section>
+                </div>            
+            </div>
+        </div>
+                    
+
+        <footer>
+            <div class="footer-content">
+                <img src="../logo.png" alt="Logo" style="height: 150px;">
+                <h5 class="change"><a href="#"></a>ECO-PULSE</h5>
+                <h4 class=""><a href="#"></a>The Heartbeat of a Healthier Planet</h4>
+                <ul class="socialmedia">
+                    <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-facebook-circle' ></i></a></li>
+                    <li><a href="#"><i class='bx bxl-whatsapp' ></i></a></li>
+                    <li><a href="#"><i class='bx bxl-linkedin-square' ></i></a></li>
+                    <li><a href="#"><i class='bx bx-edit'></i></a></li>
+                    
+                </ul>
+            </div>
+    
+            <div class="footer-bottom">
+                
+                <p>Copyright &copy;2025 . Designed by <a href="#">Shabeena</a>
+                </div>
+            
+        </footer>
+    </body>
+</html>

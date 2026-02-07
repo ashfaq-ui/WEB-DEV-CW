@@ -1,0 +1,206 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8f5;
+  margin: 0;
+  padding: 0;
+}
+.user-input button:focus,
+.contact button:focus,
+.goal:focus,
+input:focus,
+textarea:focus {
+    outline: 2px solid #08e613; 
+    outline-offset: 2px; 
+}
+
+
+.profile {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.user-input {
+  text-align: center;
+  padding: 10px 20px;
+  background: white;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+}
+.user-input input{
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 5px 20px; 
+}
+.user-input button{
+  background: #4caf50;
+  color: white;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.user-input button:hover{
+  background: #45a049;
+}
+.profile-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+}
+.profile-card textarea{
+  width: 300px;
+  height: 120px;
+}
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+h3{
+  text-align: center;
+}
+.container {
+  margin: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.skill-bar {
+  margin: 10px 0;
+  background: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.progress {
+  height: 20px;
+  background: #4caf50;
+  transition: width 0.5s ease-in-out;
+}
+
+.volunteering {
+  text-align: center;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.crossed-out {
+  text-decoration-line: line-through;
+  text-decoration-thickness: 0.2rem;
+  text-decoration-color: #0c9a28;
+
+}
+.available {
+  font-size: 24px; /* Adjust size as needed */
+  text-align: right;
+}
+
+.calendar {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calendar th,
+.calendar td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+.goal {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  margin: 5px;
+  transition: background-color 0.3s;
+}
+.selected {
+  background-color: #c6f6d5; /* Light green */
+}
+.selected-goals {
+  margin-top: 20px;
+}
+.un-goals {
+  text-align: center;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: auto;
+  gap: 10px;
+  justify-content: center;
+}
+
+
+.contact {
+  text-align: center;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact input,
+.contact textarea {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact button {
+  background: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background: #45a049;
+}
+.top {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+}
+      
+.top a {
+  padding: 10px 15px; /* Adds padding for button-like feel */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  /* Button color */
+  color: #4f400f; /* Text color */
+  text-decoration: none; /* Removes underline */
+  border-radius: 20px; /* Rounds the corners */
+  font-size: 16px; /* Adjust font size */
+  font-weight: bold; /* Make the text stand out */
+
+  background-image: url('../../GlobleCssFile.css/background.jpg'); /* Path to your image */
+  background-size: cover; /* Ensures the image covers the whole page */
+  background-position: left; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents tiling */
+}
+
+.top a:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}

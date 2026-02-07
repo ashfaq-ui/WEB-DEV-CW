@@ -1,0 +1,240 @@
+/* Original pageEditor_validator.css styles for main content */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main {
+    flex: 3;
+}
+
+aside {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-right: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+}
+
+.ref li {
+    list-style: none;
+    padding-bottom: 9px;
+}
+
+aside a {
+    text-decoration: none;
+}
+
+aside li {
+    padding-bottom: 4px;
+}
+
+.stud {
+    text-align: center;
+    line-height: 0;
+    background-color: #cbccc2ef;
+    margin-top: 8px;
+    color: #f9f8f4;
+    background-image: url('../pictures/background.jpg');
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.top {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+}
+
+.top a {
+    padding: 10px 20px;
+    color: #f4f2ee;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    background-image: url('../pictures/background.jpg');
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.top a:hover {
+    background-color: #0056b3;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar styles exactly as in volunteer.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4B6F44;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 10px;
+    font-style: normal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #DAD7CD;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #DAD7CD;
+    margin-right: auto;
+    padding-left: 10px;
+}
+
+.navbar .description {
+    margin: 0px;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #DAD7CD;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+}
+
+.nav-links li a:hover {
+    color: #a3b18a;
+}
+
+.nav-links li .active {
+    color: #333;
+    border-bottom: 1px solid #DAD7CD;
+}
+
+.navbar .pic {
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    animation: logoPulse 3s ease-in-out infinite;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: #DAD7CD;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #4B6F44;
+        width: 200px;
+        padding: 20px;
+        border-radius: 0 0 5px 5px;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
+
+/* Footer styles exactly as in volunteer.css */
+footer {
+    background-color: #4B6F44;
+    color: #DAD7CD;
+    padding-bottom: 10px;
+    text-align: center;
+    height: auto;
+    font-style: normal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.footer-content {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-content h5 {
+    font-size: 30px;
+    margin: auto;
+    color: #DAD7CD;
+}
+
+.socialmedia {
+    list-style: none;
+    padding: 0;
+}
+
+.socialmedia li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.socialmedia a {
+    color: #DAD7CD;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.socialmedia a:hover i {
+    color: #a3b18a;
+}
+
+footer img {
+    padding-top: 40px;
+    margin: 0;
+    height: 350px;
+}
+
+.footer-bottom p {
+    color: #DAD7CD;
+    font-size: medium;
+    font-weight: 200;
+}
+
+.footer-bottom a {
+    color: #493b0f;
+    text-decoration: none;
+}
+
+/* Animation for logoPulse (exactly as in volunteer.css) */
+@keyframes logoPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}

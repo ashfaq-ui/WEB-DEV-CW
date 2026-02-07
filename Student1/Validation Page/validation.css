@@ -1,0 +1,430 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background-color: #d4e4d2; /* Light green background from Volunteer page */
+    color: #333;
+    position: relative;
+    min-height: 100vh;
+}
+
+/* Wrapper */
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Navbar Styles (Single Header Matching Volunteer Page) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4B6F44;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 10px;
+    font-style: normal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #DAD7CD;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #DAD7CD;
+    margin-right: auto;
+    padding-left: 10px;
+}
+
+.navbar .description {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #DAD7CD;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+}
+
+.nav-links li a:hover {
+    color: #a3b18a;
+}
+
+.nav-links li .active {
+    color: #333;
+    border-bottom: 1px solid #DAD7CD;
+}
+
+.navbar .pic {
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    animation: logoPulse 3s ease-in-out infinite;
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: #DAD7CD;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #4B6F44;
+        width: 200px;
+        padding: 20px;
+        border-radius: 0 0 5px 5px;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
+
+/* Student Header Section */
+.stud {
+    text-align: center;
+    padding: 25px;
+    background-color: #cbccc2ef; /* Light beige with transparency */
+    margin-top: 10px;
+    color: #4f400f; /* Dark brown text */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.stud h2 {
+    font-family: 'Bebas Neue', Impact, sans-serif;
+    font-size: 2.8em;
+    margin: 0;
+}
+
+/* Container for main and aside */
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    gap: 25px;
+}
+
+/* Main content area */
+main {
+    flex: 3;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Sidebar area */
+aside {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    margin-right: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+aside h3 {
+    color: #27ae60; /* Green from Volunteer page */
+    margin-bottom: 20px;
+    font-size: 1.6em;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+aside a {
+    text-decoration: none;
+    color: #4B6F44; /* Darker green for links */
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+aside a:hover {
+    color: #27ae60;
+    transform: translateX(5px);
+}
+
+aside li {
+    padding-bottom: 12px;
+    font-size: 1.1em;
+}
+
+.top-level-ul ul {
+    margin-left: 25px;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 30px;
+    padding: 25px;
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #27ae60; /* Green from Volunteer page */
+    font-family: 'Bebas Neue', Impact, sans-serif;
+    font-size: 2.2em;
+    margin-bottom: 15px;
+}
+
+section h3 {
+    color: #4B6F44; /* Darker green from Volunteer page */
+    font-family: 'Bebas Neue', Impact, sans-serif;
+    font-size: 1.6em;
+    margin: 15px 0 10px;
+}
+
+section p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+section a {
+    color: #27ae60;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+section a:hover {
+    color: #4B6F44;
+    text-decoration: underline;
+}
+
+/* Validation Report Image */
+.report {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styles (Matching Volunteer Page) */
+footer {
+    background-color: #4B6F44;
+    color: #DAD7CD;
+    padding-bottom: 10px;
+    text-align: center;
+    height: auto;
+    font-style: normal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.footer-content {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-content h5 {
+    font-size: 30px;
+    margin: auto;
+    color: #DAD7CD;
+}
+
+.footer-content h4 {
+    font-size: 1.2em;
+    color: #DAD7CD;
+    margin: 10px 0;
+}
+
+.socialmedia {
+    list-style: none;
+    padding: 0;
+}
+
+.socialmedia li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.socialmedia a {
+    color: #DAD7CD;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.socialmedia a:hover i {
+    color: #a3b18a;
+}
+
+footer img {
+    padding-top: 40px;
+    margin: 0;
+    height: 350px;
+}
+
+footer .footer-bottom p {
+    color: #DAD7CD;
+    font-size: medium;
+    font-weight: 200;
+}
+
+.footer-bottom a {
+    color: #493b0f;
+    text-decoration: none;
+}
+
+/* Go Top Button */
+.top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+.top a {
+    padding: 12px 30px;
+    color: #4f400f;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #cbccc2ef;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.top a:hover {
+    background-color: #4B6F44;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #DAD7CD;
+}
+
+/* Animations */
+@keyframes logoPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    aside {
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 1.8em;
+    }
+
+    section h3 {
+        font-size: 1.4em;
+    }
+
+    .stud h2 {
+        font-size: 2.2em;
+    }
+
+    .top a {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+
+    footer img {
+        height: 200px; /* Adjusted for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    section h3 {
+        font-size: 1.2em;
+    }
+
+    section p {
+        font-size: 1em;
+    }
+
+    .stud h2 {
+        font-size: 1.8em;
+    }
+
+    aside li {
+        font-size: 1em;
+    }
+
+    .top a {
+        padding: 8px 20px;
+        font-size: 12px;
+    }
+
+    footer img {
+        height: 150px; /* Further adjusted for very small screens */
+    }
+
+    .navbar .logo {
+        font-size: 1.2em;
+    }
+
+    .navbar .pic {
+        height: 80px;
+    }
+}
