@@ -1,0 +1,287 @@
+.content {
+    width: 100%;
+    min-height: 100vh; /* Ensures it takes the full viewport height */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   /*background-color:  #bfd4bb; */
+    padding: 20px 0; /* Prevents content from being too tight */
+    position: relative;
+    color: black;
+
+
+}
+.introduction .carousel {
+    width: 990px;
+    height: 660px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    margin:20px;
+
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 150px;
+
+}
+.carousel {
+    width: 990px;
+    height: 660px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 120px;
+
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    position: absolute; /* Ensure proper stacking */
+    z-index: 0;
+}
+
+.carousel img.active {
+    opacity: 1;
+    z-index: 1; /* Make the active image appear on top */
+}
+
+
+
+.introduction{
+    margin-top: 40px;
+    padding: 10px;
+    border-radius: 20px;
+
+
+    background-image: url('../GlobleCssFile.css/background.jpg'); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the whole page */
+    background-position: left; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+}
+
+.introduction h1{
+    margin-left: auto;
+}
+
+
+
+
+
+
+
+.contentdescription{
+    font-size: 20px;
+    margin-top: 40px;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+
+
+
+
+
+.solution{
+    margin-top: 40px;
+    padding: 10px;
+    border-radius: 20px;
+
+
+    background-image: url('../GlobleCssFile.css/background.jpg'); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the whole page */
+    background-position: left; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+}
+
+.contentheader{
+
+
+
+    padding:10px;
+    margin:20px ;
+    
+
+}
+
+
+
+
+
+/* Volunteer Section */
+.volunteer-section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.volunteer-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.volunteer-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-image: url('../home/homepictures/background1.jpg'); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the whole page */
+    background-position: left; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+
+
+    width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin: 15px 0;
+    color: #7cfc04;
+}
+
+.card p {
+    font-size: 14px;
+    color: #93ce75;
+
+    margin: 20px;
+}
+
+.button {
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #0088cc;
+}
+
+
+
+.blog-section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.blog-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+/* hover affect */
+.blog-section .volunteer-cards .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-section .volunteer-cards .card:hover {
+    transform: scale(1.05); /* Slightly enlarges the card */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+}
+
+
+.volunteer-section .volunteer-cards .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.volunteer-section .volunteer-cards .card:hover {
+    transform: scale(1.05); /* Slightly enlarges the card */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+}
+
+
+
+
+
+
+
+
+
+.rec-vounteer{
+    margin-top: 40px;
+    padding: 10px;
+    border-radius: 20px;
+
+
+    background-image: url('../GlobleCssFile.css/background.jpg'); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the whole page */
+    background-position: left; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+}
+
+.rec-blogs{
+    margin-top: 40px;
+    padding: 10px;
+    border-radius: 20px;
+
+
+    background-image: url('../GlobleCssFile.css/background.jpg'); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the whole page */
+    background-position: left; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+}
+
+
+.top {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+}
+        
+.top a {
+    padding: 10px 20px; /* Adds padding for button-like feel */
+     /* Button color */
+    color: #4f400f; /* Text color */
+    text-decoration: none; /* Removes underline */
+    border-radius: 20px; /* Rounds the corners */
+    font-size: 12px; /* Adjust font size */
+    font-weight: bold; /* Make the text stand out */
+
+    background-image: url('../GlobleCssFile.css/background.jpg'); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the whole page */
+    background-position: left; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+}
+
+.top a:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}

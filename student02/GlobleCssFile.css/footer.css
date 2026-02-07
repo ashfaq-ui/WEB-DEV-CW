@@ -1,0 +1,71 @@
+/* Footer styles */
+footer {
+
+    color: #DAD7CD ; /* Set text color to the background color of the form */
+    padding-bottom: 10px;  /* Adjust padding as needed */
+    text-align: center;
+    height: auto;
+
+
+    font-style:normal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #DAD7CD;
+    
+    background-image: url('../GlobleCssFile.css/background.jpg'); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the whole page */
+    background-position: left; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    
+  }
+  
+  .footer-content {
+    padding: 0;
+    margin: 0; /* Adjust top margin */
+  }
+  
+  .footer-content h5 {
+    
+    font-size: 30px;
+    margin: auto;
+    color: var(--bg-color); /* Set text color to the background color of the form */
+  }
+  
+  .socialmedia {
+    list-style: none;
+    padding: 0;
+    
+  }
+  
+  .socialmedia li {
+    display: inline-block;
+    margin: 0 10px; /* Adjust horizontal spacing */
+    
+  }
+  
+  .socialmedia a {
+    color: #292106; /* Set text color to the background color of the form */
+    text-decoration: none;
+    font-size: 30px;
+  }
+  
+  .socialmedia a:hover i {
+    color: #77a529; /* Change icon color on hover */
+  }
+  footer img{
+    padding-top: 40px;
+    margin: 0;
+    color: #292106;
+  }
+  footer .footer-bottom p{
+    color: #292106;
+    font-size: medium;
+    font-weight: 200;
+  }
+
+  .linkcolor{
+    color:#493b0f ;
+  }
+
+
+  
+  

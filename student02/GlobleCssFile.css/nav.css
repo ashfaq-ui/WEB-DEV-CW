@@ -1,0 +1,86 @@
+    /* Navbar styles */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      /*  background-color:    #0f4d27 ; */
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 10px 10px;
+
+
+
+
+        font-style:normal;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: #4f400f;
+
+
+
+
+        background-image: url('../GlobleCssFile.css/background.jpg'); /* Path to your image */
+        background-size: cover; /* Ensures the image covers the whole page */
+        background-position: left; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents tiling */
+      
+
+    }
+    
+    .navbar .logo {
+        font-size: 1.5em;
+        font-weight: bold;
+        color:#DAD7CD;
+
+        
+        margin-right: auto;
+        padding-left: 10px;
+
+        /*margin: 1px;*/
+        
+    }
+
+    .navbar .description{
+        margin: 0px;
+    }
+
+    
+    
+    .nav-links {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    .nav-links li {
+        margin-right: 20px ;
+        font-weight: bold;
+       
+       
+    }
+    
+    .nav-links li a {
+        text-decoration: none;
+        color: #292106;
+        font-size: 1.1em;
+        transition: color 0.3s ease;
+        font-family: Arial, Helvetica, sans-serif;
+        display: inline-block;
+    }
+    
+    .nav-links li a:hover {
+        color:#77a529; /* Change to desired hover color */
+    }
+
+    .nav-links li .active{
+        color: #333;
+        border-bottom: 1px solid #292106;
+    }
+
+    .navbar .pic{
+        height: 100px;
+        margin: 0%;
+        padding: 0%;
+    
+    }
+
+ 

@@ -1,0 +1,141 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+/* Container for the oval border */
+.table-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+    overflow:hidden; /* Ensures the table stays inside the border */
+    margin: 20px auto;
+    max-width: 80%;
+    border-radius: 50px; /* Creates an oval shape */
+}
+
+/* Table styling */
+.table {
+    border-collapse:collapse;
+    width: 100%;
+    margin: 5px;
+
+
+
+
+
+}
+
+th, td {
+    border: 5px solid black;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    font-size: 150%;
+    
+    background-image: url('../GlobleCssFile.css/background.jpg'); /* Path to your image */
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    
+    transition: all 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+/* Change background color on hover */
+th:hover, td:hover {
+    background-color: rgba(75, 111, 68, 0.7); /* Green tint with transparency */
+    color: white; /* Change text color */
+}
+
+/* Scale up effect */
+th:hover, td:hover {
+    transform: scale(1.1); /* Slightly enlarges the cell */
+}
+
+/* Glow effect */
+th:hover, td:hover {
+    box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.8);
+}
+
+/* Change cursor */
+th:hover, td:hover {
+    cursor: pointer;
+}
+
+li {
+    margin-bottom: 18px; /* Adds space below each item */
+  }
+
+.table-container .table .r4{
+    padding: 0%;
+    margin: 10px;
+    height: 75px;
+    width: 75px;
+   /* background-color: #4B6F44; */
+}
+
+.table-container .table .r4{
+    object-fit: contain; /* Keeps image aspect ratio */
+    opacity: 0.8; /* Optional: Adjust transparency */
+    mix-blend-mode: darken; /* Blends image with cell background */
+}
+
+
+
+
+
+
+
+.contentdescription{
+    font-size: 20px;
+    margin-top: 40px;
+    padding: 10px;
+    border-radius: 20px;
+
+
+
+}
+
+.contentheader{
+    margin-top: 30px;
+    border-radius: 20px;
+    padding:10px;
+
+    background-image: url('../GlobleCssFile.css/background.jpg'); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the whole page */
+    background-position: left; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+}
+
+
+.top {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+}
+        
+.top a {
+    padding: 10px 20px; /* Adds padding for button-like feel */
+     /* Button color */
+    color: #4f400f; /* Text color */
+    text-decoration: none; /* Removes underline */
+    border-radius: 20px; /* Rounds the corners */
+    font-size: 12px; /* Adjust font size */
+    font-weight: bold; /* Make the text stand out */
+
+    background-image: url('../GlobleCssFile.css/background.jpg'); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the whole page */
+    background-position: left; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+}
+
+.top a:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
